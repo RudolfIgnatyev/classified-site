@@ -8,3 +8,6 @@
 @import url(../blocks/filter/filter.css);
 @import url(../blocks/results/results.css);
 @import url(../blocks/popup/popup.css);
+@import url(../blocks/favourites/favourites.css);
+@import url(../blocks/sorting/sorting.css);
+@import url(../blocks/title/title.css);

@@ -1,0 +1,4 @@
+.results__head {
+  z-index: 2;
+  background-color: var(--main-bg);
+}

@@ -1,4 +1,12 @@
 :root {
   --main-bg: #f5f6f9;
   --main-font: "Montserrat", "Helvetica", sans-serif;
+  --dark-blue: #1E2B6C;
+  --disabled-blue: #A4AAC7;
+  --titles-color: #444444;
+  --main-blue: #4456B1;
+  --disabled-bg: #E1E3EC;
+  --animation: 0.155s ease-in-out;
+  --light-blue: #7B8FF7;
+  --white: #ffffff;
 }

@@ -16,6 +16,37 @@
         <section class="filter">
         </section>
         <section class="results">
+          <div class="results__head">
+            <h2 class="title results__title">Результаты</h2>
+            <div class="results__sorting">
+              <form class="sorting__form">
+                <fieldset class="sorting__order">
+                  <legend>Показать сначала:</legend>
+                  <ul class="sorting__order-list">
+                    <li class="sorting__order-tab">
+                      <input class="visually-hidden" type="radio" name="sorting-order" value="popular" id="sort-popular"
+                        checked></input>
+                      <label for="sort-popular">Популярные</label>
+                    </li>
+                    <li class="sorting__order-tab">
+                      <input class="visually-hidden" type="radio" name="sorting-order" value="cheap"
+                        id="sort-cheap"></input>
+                      <label for="sort-cheap">Дешёвые</label>
+                    </li>
+                    <li class="sorting__order-tab">
+                      <input class="visually-hidden" type="radio" name="sorting-order" value="new"
+                        id="sort-new"></input>
+                      <label for="sort-new">Новые</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <div class="sorting__favourites"></div>
+              </form>
+            </div>
+          </div>
+          <div class="results__info favourites hidden">
+          </div>
+          <ul class="results__list"></ul>
         </section>
       </div>
     </section>

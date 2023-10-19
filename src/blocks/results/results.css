@@ -1,0 +1,15 @@
+@import url(./__head/results__head.css);
+@import url(./__info/results__info.css);
+@import url(./__list/results__list.css);
+@import url(./__title/results__title.css);
+@import url(./__sorting/results__sorting.css);
+
+.results {
+  width: 922px;
+  height: calc(100vh - 80px);
+  padding-left: 64px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}

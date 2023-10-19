@@ -1,2 +1,6 @@
 @import url(./__blueline/onlineshop-app__blueline.css);
 @import url(./__wrapper/onlineshop-app__wrapper.css);
+
+.onlineshop-app {
+  height: 100vh;
+}

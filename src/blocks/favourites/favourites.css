@@ -1,0 +1,15 @@
+.favourites p {
+  width: 58%;
+  margin: 0;
+  margin-bottom: 20px;
+  color: var(--disabled-blue);
+  text-align: center;
+}
+
+.favourites {
+  display: flex;
+  padding-top: 30px;
+
+  flex-direction: column;
+  align-items: center;
+}

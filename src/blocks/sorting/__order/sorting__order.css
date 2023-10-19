@@ -1,0 +1,14 @@
+.sorting__order {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.sorting__order legend {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
+  line-height: 1.57;
+  letter-spacing: 0.02em;
+  color: var(--disabled-blue);
+}
