@@ -1,0 +1,7 @@
+.product__image-navigation {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  display: flex;
+  padding: 0 5px;
+}

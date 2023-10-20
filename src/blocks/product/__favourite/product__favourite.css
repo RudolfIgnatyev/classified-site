@@ -1,0 +1,4 @@
+.product__favourite {
+  position: absolute;
+  z-index: 3;
+}

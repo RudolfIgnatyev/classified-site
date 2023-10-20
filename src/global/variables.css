@@ -9,4 +9,5 @@
   --animation: 0.155s ease-in-out;
   --light-blue: #7B8FF7;
   --white: #ffffff;
+  --popup-overlay: rgba(0, 0, 0, 0.5);
 }

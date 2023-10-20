@@ -1,0 +1,5 @@
+.product__date {
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--disabled-blue);
+}

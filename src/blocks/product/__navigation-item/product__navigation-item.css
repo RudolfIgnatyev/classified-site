@@ -1,0 +1,11 @@
+.product__navigation-item {
+  display: block;
+  height: 4px;
+  width: calc(100% / 5);
+  background-color: var(--disabled-bg);
+  opacity: 0.25;
+}
+
+.product__navigation-item:not(:last-of-type) {
+  margin-right: 2px;
+}

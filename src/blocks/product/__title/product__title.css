@@ -1,0 +1,28 @@
+.product__title {
+  margin: 0 0 6px;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 600;
+  color: var(--main-blue);
+}
+
+.product__title a {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: var(--animation);
+}
+
+.product__title a:hover {
+  color: var(--light-blue);
+}
+
+.product__title a:active {
+  color: var(--dark-blue);
+}
+
+.product__title a:focus {
+  outline: none;
+  color: var(--dark-blue);
+}

@@ -1,0 +1,20 @@
+@import url(./__favourite/product__favourite.css);
+@import url(./__image/product__image.css);
+@import url(./__image-more-photo/product__image-more-photo.css);
+@import url(./__image-navigation/product__image-navigation.css);
+@import url(./__navigation-item/product__navigation-item.css);
+@import url(./__navigation-item/_active/product__navigation-item_active.css);
+@import url(./__content/product__content.css);
+@import url(./__title/product__title.css);
+@import url(./__price/product__price.css);
+@import url(./__address/product__address.css);
+@import url(./__date/product__date.css);
+
+.product {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}

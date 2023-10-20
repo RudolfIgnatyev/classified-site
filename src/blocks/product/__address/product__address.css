@@ -1,0 +1,21 @@
+.product__address {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--disabled-blue);
+}
+
+.product__address::before {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 14px;
+  height: 18px;
+  content: "";
+  background-image: url("../../../images/pointer.svg");
+}
