@@ -1,0 +1,74 @@
+.filter__checkboxes-item {
+  position: relative;
+}
+
+.filter__checkboxes-item input:focus+label {
+  color: var(--light-blue);
+}
+
+.filter__checkboxes-item label:hover::before {
+  border-color: var(--light-blue);
+}
+
+.filter__checkboxes-item label:active::before {
+  background-color: var(--dark-blue);
+  border-color: var(--dark-blue);
+}
+
+.filter__checkboxes-item label:hover {
+  color: var(--light-blue)
+}
+
+.filter__checkboxes-item input:disabled+label {
+  color: var(--disabled-blue);
+  cursor: default;
+}
+
+.filter__checkboxes-item input:disabled+label::before {
+  background-color: var(--disabled-bg);
+  cursor: default;
+}
+
+.filter__checkboxes-item input:disabled+label:hover::before {
+  border-color: var(--disabled-bg);
+}
+
+.filter__checkboxes-item input:checked:disabled+label::before {
+  background-image: url("../../../images/icon-tick_disabled.svg");
+  background-color: var(--disabled-bg);
+  border-color: var(--disabled-bg);
+  cursor: default;
+}
+
+.filter__checkboxes-item input:checked:disabled+label {
+  color: var(--disabled-blue);
+  cursor: default;
+}
+
+.filter__checkboxes-item input:focus:checked+label::before {
+  border-color: var(--dark-blue);
+}
+
+.filter__checkboxes-item input:focus+label::before {
+  border-color: var(--light-blue);
+}
+
+.filter__checkboxes-item input:checked:focus+label:hover::before {
+  border-color: var(--light-blue);
+}
+
+.filter__checkboxes-item label:active {
+  color: var(--dark-blue);
+}
+
+.filter__checkboxes-item input:focus:checked+label {
+  color: var(--main-blue)
+}
+
+.filter__checkboxes-item input:focus:not(:checked)+label::before {
+  border-color: #E1E3EC;
+}
+
+.filter__checkboxes-item input:not(:checked):focus+label:focus {
+  color: var(--light-blue);
+}

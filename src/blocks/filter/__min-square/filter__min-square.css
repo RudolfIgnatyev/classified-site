@@ -1,0 +1,54 @@
+.filter__min-square input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 48px;
+  padding-left: 15px;
+  border: 2px solid #e1e3ec;
+  border-radius: 4px;
+  background-color: var(--main-bg);
+  color: var(--titles-color);
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  appearance: none;
+  transition: var(--animation);
+  -moz-appearance: textfield;
+}
+
+.filter__min-square input:focus::placeholder {
+  opacity: 0;
+}
+
+.filter__min-square input:hover {
+  border-color: var(--light-blue);
+  cursor: pointer;
+}
+
+.filter__min-square input:active {
+  outline: none;
+  border-color: var(--dark-blue);
+  cursor: text;
+}
+
+.filter__min-square input:focus {
+  outline: none;
+  border-color: var(--dark-blue);
+}
+
+.filter__min-square input:disabled {
+  background-color: var(--disabled-bg);
+  color: var(--disabled-blue);
+}
+
+.filter__min-square input:disabled:hover {
+  border-color: var(--disabled-bg);
+}
+
+.filter__min-square input:disabled:active {
+  cursor: default;
+}
+
+.filter__min-square {
+  margin-bottom: 15px;
+}

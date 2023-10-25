@@ -1,0 +1,50 @@
+.filter__radiobuttons {
+  margin-bottom: 20px;
+}
+
+.filter__radiobuttons label {
+  border: 2px solid #e1e3ec;
+  transition: var(--animation);
+}
+
+.filter__radiobuttons input:checked+label {
+  color: #ffffff;
+  background-color: var(--main-blue);
+  border-color: var(--main-blue);
+}
+
+.filter__radiobuttons input:active:disabled+label {
+  background-color: var(--main-bg);
+}
+
+.filter__radiobuttons input:disabled+label {
+  background-color: var(--main-bg);
+  color: var(--disabled-blue);
+  cursor: default;
+}
+
+.filter__radiobuttons input:disabled+label:hover {
+  border-color: var(--disabled-bg);
+}
+
+.filter__radiobuttons label:hover {
+  background-color: var(--light-blue);
+  color: #ffffff;
+  border-color: var(--light-blue);
+}
+
+.filter__radiobuttons label:active {
+  background-color: var(--dark-blue);
+  border-color: var(--dark-blue);
+}
+
+.filter__radiobuttons input:disabled:checked+label {
+  background-color: var(--disabled-bg);
+  border-color: var(--disabled-bg);
+}
+
+.filter__radiobuttons input:focus:not(:checked)+label {
+  background-color: var(--light-blue);
+  border-color: var(--light-blue);
+  color: #ffffff;
+}

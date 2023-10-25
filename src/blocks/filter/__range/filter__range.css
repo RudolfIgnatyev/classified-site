@@ -1,0 +1,8 @@
+.filter__range {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.filter__range label {
+  margin-left: -16px;
+}

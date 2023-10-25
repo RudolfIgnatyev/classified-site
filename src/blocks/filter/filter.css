@@ -1,0 +1,29 @@
+@import url(./__title/filter__title.css);
+@import url(./__select-wrapper/filter__select-wrapper.css);
+@import url(./__range/filter__range.css);
+@import url(./__checkboxes-list/filter__checkboxes-list.css);
+@import url(./__type/filter__type.css);
+@import url(./__checkboxes-item/filter__checkboxes-item.css);
+@import url(./__min-square/filter__min-square.css);
+@import url(./__radiobuttons/filter__radiobuttons.css);
+@import url(./__ram-list/filter__ram-list.css);
+@import url(./__radiobuttons-item/filter__radiobuttons-item.css);
+@import url(./__camera/filter__camera.css);
+
+.filter__checkboxes-list label,
+.filter__radiobuttons label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--main-blue);
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter__checkboxes-list,
+.filter__radiobuttons-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: var(--animation);
+}

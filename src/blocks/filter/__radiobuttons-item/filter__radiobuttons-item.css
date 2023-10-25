@@ -1,0 +1,20 @@
+.filter__radiobuttons-item:not(:first-of-type) label {
+  border-left: none;
+}
+
+.filter__radiobuttons-item:first-of-type label {
+  border-radius: 4px 0 0 4px;
+}
+
+.filter__radiobuttons-item:last-of-type label {
+  border-radius: 0 4px 4px 0;
+}
+
+.filter__radiobuttons-item label {
+  margin: 0;
+  padding: 10px 18px;
+}
+
+.filter__radiobuttons-item {
+  flex-grow: 1;
+}

@@ -14,6 +14,82 @@
       <div class="onlineshop-app__blueline"></div>
       <div class="onlineshop-app__wrapper">
         <section class="filter">
+          <h2 class="title filter__title">Фильтр</h2>
+          <form action="#" method="post">
+            <div class="filter__select-wrapper">
+              <label for="categories">Категория товаров</label>
+              <select name="categories" id="categories">
+                <option value="all" selected>Все</option>
+                <option value="estate">Недвижимость</option>
+                <option value="laptops">Ноутбуки</option>
+                <option value="camera">Фотоаппараты</option>
+                <option value="cars">Автомобили</option>
+              </select>
+              <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" />
+              </svg>
+            </div>
+            <div class="filter__range">
+              <label for="range">Цена, ₽</label>
+              <input type="text" id="sampleSlider">
+            </div>
+            <div>
+              <fieldset class="filter__type">
+                <legend>Тип недвижимости</legend>
+                <ul class="filter__checkboxes-list">
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="estate-type" value="house" id="house">
+                    <label for="house">Дом</label>
+                  </li>
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="estate-type" value="flat" id="flat">
+                    <label for="flat">Квартира</label>
+                  </li>
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="estate-type" value="apartments"
+                      id="apartments">
+                    <label for="apartments">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <div class="filter__min-square">
+                <label for="square">Минимальная площать, м<sup>2</label>
+                <input type="number" id="square" name="min-square" min="1" value="" placeholder="0">
+              </div>
+              <fieldset class="filter__radiobuttons">
+                <legend>Количество комнат</legend>
+                <ul class="filter__ram-list">
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="rooms" id="any_room" value="any">
+                    <label for="any_room">Любое</label>
+                  </li>
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="rooms" id="one" value="one">
+                    <label for="one">1</label>
+                  </li>
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="rooms" id="two" value="two">
+                    <label for="two">2</label>
+                  </li>
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="rooms" id="three" value="three">
+                    <label for="three">3</label>
+                  </li>
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="rooms" id="four" value="four">
+                    <label for="four">4</label>
+                  </li>
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="rooms" id="fivemore" value="fivemore">
+                    <label for="fivemore">5+</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="filter__camera">
+            </div>
+          </form>
         </section>
         <section class="results">
           <div class="results__head">
@@ -155,8 +231,8 @@
               </button>
               <div class="product__image">
                 <div class="product__image-more-photo hidden">+2 фото</div>
-                <img src="./images/item4.jpg" alt="1-комнатная квартира в центре Питера" srcset="./images/item4-2x.jpg 2x"
-                  width="318" height="220">
+                <img src="./images/item4.jpg" alt="1-комнатная квартира в центре Питера"
+                  srcset="./images/item4-2x.jpg 2x" width="318" height="220">
                 <div class="product__image-navigation hidden">
                   <span class="product__navigation-item product__navigation-item_active"></span>
                   <span class="product__navigation-item"></span>
@@ -175,7 +251,8 @@
               </div>
             </li>
             <li class="product">
-              <button class="product__favourite fav-add fav-add_checked" type="button" aria-label="Добавить в избранное">
+              <button class="product__favourite fav-add fav-add_checked" type="button"
+                aria-label="Добавить в избранное">
                 <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M3 7C3 13 10 16.5 11 17C12 16.5 19 13 19 7C19 4.79086 17.2091 3 15 3C12 3 11 5 11 5C11 5 10 3 7 3C4.79086 3 3 4.79086 3 7Z"
