@@ -1,9 +1,9 @@
-@import url(../vendor/normalize.css);
 @import url(../global/variables.css);
 @import url(../global/fonts.css);
 @import url(../global/reboot.css);
 @import url(../global/utils.css);
 @import url(../global/typography.css);
+@import url(../vendor/normalize.css);
 @import url(../blocks/onlineshop-app/onlineshop-app.css);
 @import url(../blocks/filter/filter.css);
 @import url(../blocks/results/results.css);
