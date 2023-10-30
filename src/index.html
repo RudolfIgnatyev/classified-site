@@ -31,7 +31,7 @@
               </svg>
             </div>
             <div class="filter__range">
-              <label for="range">Цена, ₽</label>
+              <label for="sampleSlider">Цена, ₽</label>
               <input type="text" id="sampleSlider">
             </div>
             <div>
@@ -54,7 +54,7 @@
                 </ul>
               </fieldset>
               <div class="filter__min-square">
-                <label for="square">Минимальная площать, м<sup>2</label>
+                <label for="square">Минимальная площадь, м<sup>2</label>
                 <input type="number" id="square" name="min-square" min="1" value="" placeholder="0">
               </div>
               <fieldset class="filter__radiobuttons">
@@ -88,6 +88,167 @@
               </fieldset>
             </div>
             <div class="filter__camera">
+              <fieldset class="filter__type">
+                <legend>Тип фотоаппарата</legend>
+                <ul class="filter__checkboxes-list">
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="camera-type" id="mirror" value="mirror">
+                    <label for="mirror">Зеркальный</label>
+                  </li>
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="camera-type" id="digital" value="digital">
+                    <label for="digital">Цифровой</label>
+                  </li>
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="camera-type" id="mirrorless"
+                      value="mirrorless">
+                    <label for="mirrorless">Беззеркальный</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <div class="filter__select-wrapper filter__select-wrapper_min-resolution">
+                <label for="resolution-matrix">Минимальное разрешение матрицы</label>
+                <select name="resolution-matrix" id="resolution-matrix">
+                  <option value="1mp" selected>1 МП</option>
+                  <option value="3mp">3 МП</option>
+                  <option value="5mp">5 МП</option>
+                  <option value="7mp">7 МП</option>
+                  <option value="10mp">10 МП</option>
+                </select>
+                <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" />
+                </svg>
+              </div>
+              <div class="filter__select-wrapper">
+                <label for="resolution-video">Минимальное разрешение видео</label>
+                <select name="resolution-video" id="resolution-video">
+                  <option value="any" selected>Любое</option>
+                  <option value="HD">HD</option>
+                  <option value="Full_HD">Full HD</option>
+                  <option value="4K">4K</option>
+                  <option value="5K">5K</option>
+                </select>
+                <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <fieldset class="filter__type">
+                <legend>Тип ноутбука</legend>
+                <ul class="filter__checkboxes-list">
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="laptop-type" id="ultra" value="ultra">
+                    <label for="ultra">Ультрабук</label>
+                  </li>
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="laptop-type" id="home" value="home">
+                    <label for="home">Домашний ноутбук</label>
+                  </li>
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="laptop-type" id="gaming" value="gaming">
+                    <label for="gaming">Игровой ноутбук</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filter__radiobuttons">
+                <legend>Минимальный объем оперативной памяти</legend>
+                <ul class="filter__radiobuttons-list">
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="ram" id="any_ram" value="any">
+                    <label for="any_ram">Любой</label>
+                  </li>
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="ram" id="4gb" value="4gb">
+                    <label for="4gb">4 Гб</label>
+                  </li>
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="ram" id="8gb" value="8gb">
+                    <label for="8gb">8 Гб</label>
+                  </li>
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="ram" id="16gb" value="16gb">
+                    <label for="16gb">16 Гб</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filter__radiobuttons">
+                <legend>Минимальная диагональ экрана</legend>
+                <ul class="filter__radiobuttons-list">
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="diagonal" id="any_diagonal" value="any" checked>
+                    <label for="any_diagonal">Любая</label>
+                  </li>
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="diagonal" id="13in" value="13in">
+                    <label for="13in">13<sup>″</sup></label>
+                  </li>
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="diagonal" id="14in" value="14in">
+                    <label for="14in">14<sup>″</sup></label>
+                  </li>
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="diagonal" id="15in" value="15in">
+                    <label for="15in">15<sup>″</sup></label>
+                  </li>
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="diagonal" id="17in" value="17in">
+                    <label for="17in">17<sup>″</sup></label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filter__type">
+                <legend>Тип процессора</legend>
+                <ul class="filter__checkboxes-list">
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="laptop-processor" id="i3" value="i3">
+                    <label for="i3">Intel Core i3</label>
+                  </li>
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="laptop-processor" id="i5" value="i5">
+                    <label for="i5">Intel Core i5</label>
+                  </li>
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="laptop-processor" id="i7" value="i7">
+                    <label for="i7">Intel Core i7</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div>
+              <div class="filter__select-wrapper">
+                <label for="car_year">Минимальный год выпуска</label>
+                <select name="car_year" id="car_year">
+                  <option value="1900" selected>1900</option>
+                  <option value="1940">1940</option>
+                  <option value="1960">1960</option>
+                  <option value="1980">1980</option>
+                  <option value="2000">2000</option>
+                </select>
+                <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" />
+                </svg>
+              </div>
+              <fieldset class="filter__radiobuttons">
+                <legend>Коробка передач</legend>
+                <ul class="filter__radiobuttons-list">
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="transmission" id="any_transmission" value="any" checked>
+                    <label for="any_transmission">Любая</label>
+                  </li>
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="transmission" id="mechanic_transmission" value="mechanic">
+                    <label for="mechanic_transmission">Механика</label>
+                  </li>
+                  <li class="filter__radiobuttons-item">
+                    <input type="radio" class="visually-hidden" name="transmission" id="auto_transmission" value="auto">
+                    <label for="auto_transmission">Автомат</label>
+                  </li>
+                </ul>
+              </fieldset>
             </div>
           </form>
         </section>

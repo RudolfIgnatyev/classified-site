@@ -1,5 +1,6 @@
 @import url(./__title/filter__title.css);
 @import url(./__select-wrapper/filter__select-wrapper.css);
+@import url(./__select-wrapper/_min-resolution/filter__select-wrapper_min-resolution.css);
 @import url(./__range/filter__range.css);
 @import url(./__checkboxes-list/filter__checkboxes-list.css);
 @import url(./__type/filter__type.css);
