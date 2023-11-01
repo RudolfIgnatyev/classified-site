@@ -31,8 +31,12 @@
               </svg>
             </div>
             <div class="filter__range">
-              <label for="sampleSlider">Цена, ₽</label>
-              <input type="text" id="sampleSlider">
+              <!-- <label for="sampleSlider">Цена, ₽</label>
+              <input type="text" id="sampleSlider"> -->
+              <label for="sampleSlider">Максимальная цена, ₽</label>
+              <input type="range" value="100000" min="10000" max="100000" id="sampleSlider"
+                oninput="rangeValue.innerText = this.value">
+              <output id="rangeValue">100000</output>
             </div>
             <div>
               <fieldset class="filter__type">
