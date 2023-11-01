@@ -4,6 +4,7 @@
 @import url(./__range/filter__range.css);
 @import url(./__checkboxes-list/filter__checkboxes-list.css);
 @import url(./__type/filter__type.css);
+@import url(./__type/_car-body/filter__type_car-body.css);
 @import url(./__checkboxes-item/filter__checkboxes-item.css);
 @import url(./__min-square/filter__min-square.css);
 @import url(./__radiobuttons/filter__radiobuttons.css);
@@ -29,7 +30,6 @@
   padding: 0;
   border: none;
 }
-
 
 .filter label,
 .filter legend {

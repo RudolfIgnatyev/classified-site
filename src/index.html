@@ -236,11 +236,13 @@
                 <legend>Коробка передач</legend>
                 <ul class="filter__radiobuttons-list">
                   <li class="filter__radiobuttons-item">
-                    <input type="radio" class="visually-hidden" name="transmission" id="any_transmission" value="any" checked>
+                    <input type="radio" class="visually-hidden" name="transmission" id="any_transmission" value="any"
+                      checked>
                     <label for="any_transmission">Любая</label>
                   </li>
                   <li class="filter__radiobuttons-item">
-                    <input type="radio" class="visually-hidden" name="transmission" id="mechanic_transmission" value="mechanic">
+                    <input type="radio" class="visually-hidden" name="transmission" id="mechanic_transmission"
+                      value="mechanic">
                     <label for="mechanic_transmission">Механика</label>
                   </li>
                   <li class="filter__radiobuttons-item">
@@ -249,7 +251,33 @@
                   </li>
                 </ul>
               </fieldset>
+              <fieldset class="filter__type filter__type_car-body">
+                <legend>Тип кузова</legend>
+                <ul class="filter__checkboxes-list">
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="car-body" id="sedan" value="sedan">
+                    <label for="sedan">Седан</label>
+                  </li>
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="car-body" id="universal" value="universal">
+                    <label for="universal">Универсал</label>
+                  </li>
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="car-body" id="hatchback" value="hatchback">
+                    <label for="hatchback">Хэтчбэк</label>
+                  </li>
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="car-body" id="jeep" value="jeep">
+                    <label for="jeep">Внедорожник</label>
+                  </li>
+                  <li class="filter__checkboxes-item">
+                    <input type="checkbox" class="visually-hidden" name="car-body" id="cupe" value="cupe">
+                    <label for="cupe">Купэ</label>
+                  </li>
+                </ul>
+              </fieldset>
             </div>
+            <button class="button filter__button" type="submit">Показать</button>
           </form>
         </section>
         <section class="results">
