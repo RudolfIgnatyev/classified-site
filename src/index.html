@@ -31,8 +31,6 @@
               </svg>
             </div>
             <div class="filter__range">
-              <!-- <label for="sampleSlider">Цена, ₽</label>
-              <input type="text" id="sampleSlider"> -->
               <label for="minSlider">Минимальная цена, ₽</label>
               <input type="range" value="10000" min="10000" max="100000" id="minSlider"
                 oninput="{
@@ -71,9 +69,9 @@
               </div>
               <fieldset class="filter__radiobuttons">
                 <legend>Количество комнат</legend>
-                <ul class="filter__ram-list">
+                <ul class="filter__radiobuttons-list">
                   <li class="filter__radiobuttons-item">
-                    <input type="radio" class="visually-hidden" name="rooms" id="any_room" value="any">
+                    <input type="radio" class="visually-hidden" name="rooms" id="any_room" value="any_room">
                     <label for="any_room">Любое</label>
                   </li>
                   <li class="filter__radiobuttons-item">
@@ -135,7 +133,7 @@
               <div class="filter__select-wrapper">
                 <label for="resolution-video">Минимальное разрешение видео</label>
                 <select name="resolution-video" id="resolution-video">
-                  <option value="any" selected>Любое</option>
+                  <option value="any_D" selected>Любое</option>
                   <option value="HD">HD</option>
                   <option value="Full_HD">Full HD</option>
                   <option value="4K">4K</option>
@@ -169,7 +167,7 @@
                 <legend>Минимальный объем оперативной памяти</legend>
                 <ul class="filter__radiobuttons-list">
                   <li class="filter__radiobuttons-item">
-                    <input type="radio" class="visually-hidden" name="ram" id="any_ram" value="any">
+                    <input type="radio" class="visually-hidden" name="ram" id="any_ram" value="any_ram">
                     <label for="any_ram">Любой</label>
                   </li>
                   <li class="filter__radiobuttons-item">
@@ -190,7 +188,7 @@
                 <legend>Минимальная диагональ экрана</legend>
                 <ul class="filter__radiobuttons-list">
                   <li class="filter__radiobuttons-item">
-                    <input type="radio" class="visually-hidden" name="diagonal" id="any_diagonal" value="any" checked>
+                    <input type="radio" class="visually-hidden" name="diagonal" id="any_diagonal" value="any_diagonal" checked>
                     <label for="any_diagonal">Любая</label>
                   </li>
                   <li class="filter__radiobuttons-item">
@@ -248,17 +246,18 @@
                 <legend>Коробка передач</legend>
                 <ul class="filter__radiobuttons-list">
                   <li class="filter__radiobuttons-item">
-                    <input type="radio" class="visually-hidden" name="transmission" id="any_transmission" value="any"
+                    <input type="radio" class="visually-hidden" name="transmission" id="any_transmission" value="any_transmission"
                       checked>
                     <label for="any_transmission">Любая</label>
                   </li>
                   <li class="filter__radiobuttons-item">
                     <input type="radio" class="visually-hidden" name="transmission" id="mechanic_transmission"
-                      value="mechanic">
+                      value="mechanic_transmission">
                     <label for="mechanic_transmission">Механика</label>
                   </li>
                   <li class="filter__radiobuttons-item">
-                    <input type="radio" class="visually-hidden" name="transmission" id="auto_transmission" value="auto">
+                    <input type="radio" class="visually-hidden" name="transmission" id="auto_transmission" value="                    <label for="auto_transmission">Автомат</label>
+                    ">
                     <label for="auto_transmission">Автомат</label>
                   </li>
                 </ul>
