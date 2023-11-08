@@ -33,10 +33,18 @@
             <div class="filter__range">
               <!-- <label for="sampleSlider">Цена, ₽</label>
               <input type="text" id="sampleSlider"> -->
-              <label for="sampleSlider">Максимальная цена, ₽</label>
-              <input type="range" value="100000" min="10000" max="100000" id="sampleSlider"
-                oninput="rangeValue.innerText = this.value">
-              <output id="rangeValue">100000</output>
+              <label for="minSlider">Минимальная цена, ₽</label>
+              <input type="range" value="10000" min="10000" max="100000" id="minSlider"
+                oninput="{
+                  minValue.innerText = this.value;
+                  maxSlider.min = this.value;
+                  maxValue.innerText = maxSlider.value
+                }">
+              <output id="minValue">10000</output>
+              <label for="maxSlider">Максимальная цена, ₽</label>
+              <input type="range" value="100000" min="10000" max="100000" id="maxSlider"
+                oninput="maxValue.innerText = this.value">
+              <output id="maxValue">100000</output>
             </div>
             <div>
               <fieldset class="filter__type">
