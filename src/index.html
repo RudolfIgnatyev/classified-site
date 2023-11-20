@@ -32,8 +32,7 @@
             </div>
             <div class="filter__range">
               <label for="minSlider">Минимальная цена, ₽</label>
-              <input type="range" value="10000" min="10000" max="100000" id="minSlider"
-                oninput="{
+              <input type="range" value="10000" min="10000" max="100000" id="minSlider" oninput="{
                   minValue.innerText = this.value;
                   maxSlider.min = this.value;
                   maxValue.innerText = maxSlider.value
@@ -188,7 +187,8 @@
                 <legend>Минимальная диагональ экрана</legend>
                 <ul class="filter__radiobuttons-list">
                   <li class="filter__radiobuttons-item">
-                    <input type="radio" class="visually-hidden" name="diagonal" id="any_diagonal" value="any_diagonal" checked>
+                    <input type="radio" class="visually-hidden" name="diagonal" id="any_diagonal" value="any_diagonal"
+                      checked>
                     <label for="any_diagonal">Любая</label>
                   </li>
                   <li class="filter__radiobuttons-item">
@@ -246,8 +246,8 @@
                 <legend>Коробка передач</legend>
                 <ul class="filter__radiobuttons-list">
                   <li class="filter__radiobuttons-item">
-                    <input type="radio" class="visually-hidden" name="transmission" id="any_transmission" value="any_transmission"
-                      checked>
+                    <input type="radio" class="visually-hidden" name="transmission" id="any_transmission"
+                      value="any_transmission" checked>
                     <label for="any_transmission">Любая</label>
                   </li>
                   <li class="filter__radiobuttons-item">
@@ -256,8 +256,8 @@
                     <label for="mechanic_transmission">Механика</label>
                   </li>
                   <li class="filter__radiobuttons-item">
-                    <input type="radio" class="visually-hidden" name="transmission" id="auto_transmission" value="                    <label for="auto_transmission">Автомат</label>
-                    ">
+                    <input type="radio" class="visually-hidden" name="transmission" id="auto_transmission"
+                      value="auto_transmission">
                     <label for="auto_transmission">Автомат</label>
                   </li>
                 </ul>
