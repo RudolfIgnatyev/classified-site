@@ -1,9 +1,21 @@
 class Card {
-  constructor(data, cardSelector, { handleCardClick, handleHeartClick }, selectorsAndClass, likedProperty, currentUserId) {
+  constructor(data, cardSelector, { handleCardClick, handleHeartClick }, selectorsAndClass, likedProperty) {
     this.#name = data.name;
-    this.#link = data.link;
+    this.#link = data.photos[0];
     this.#likedCardId = data.likes;
     this.#cardId = data.#id;
+    this.#coordinates = data.coordinates;
+    this.#sellerFullname = data.seller.fullname;
+    this.#sellerRating = data.seller.rating;
+    this.#description = data.description;
+    this.#city = data.address.city;
+    this.#street = data.address.street;
+    this.#building = data.address.building;
+    this.#publishDate = data.publishDate;
+    this.#category = data.category;
+    this.filtersType = data.filters.type;
+    this.filtersArea = data.filters.area;
+    this.filtersRoomsCount = data.filters.roomsCount;
     this.#cardSelector = cardSelector;
     this.#handleCardClick = handleCardClick;
     this.#handleHeartClick = handleHeartClick;
@@ -11,9 +23,7 @@ class Card {
     this.#cardTitleSelector = selectorsAndClass.cardTitleSelector;
     this.#cardLikeIconSelector = selectorsAndClass.cardLikeIconSelector;
     this.#cardLikeIconActiveClass = selectorsAndClass.cardLikeIconActiveClass;
-    this.#cardLikeAmountTextSelector = selectorsAndClass.cardLikeAmountTextSelector;
     this.#likedProperty = likedProperty;
-    this.#currentUserId = currentUserId;
   }
 
   // Метод клонирования содержимого селектора шаблона
